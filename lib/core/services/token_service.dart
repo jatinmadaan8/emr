@@ -1,0 +1,19 @@
+import 'package:practiceinsights_emr_provider/modules/encounters/data/models/encounter.dart';
+import 'package:practiceinsights_emr_provider/modules/patients/data/models/patient.dart';
+
+class TokenService {
+  //TODO: Add temp token for now.
+  String token =
+      'eyJraWQiOiIzM0tBM2hRdWx6TUN2blRrcE5KMk9CcE9WY0VWbkQ2cGk3blNScHM0Rkc0PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIzZDlkZDUyMi1kNzhjLTRhOGUtOTdhZS1mMTYxZjBmNTQ4YmYiLCJjb2duaXRvOmdyb3VwcyI6WyJQUk9WSURFUi1USCJdLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiY3VzdG9tOlBhdGllbnRJZCI6IjczNCIsImN1c3RvbTpSb2xlcyI6IkQiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9oT1ZvT0w3b2wiLCJjb2duaXRvOnVzZXJuYW1lIjoiZG9jMV9jb2RlZGEuY29tIiwiYXVkIjoiMmtkdTdtNWE0aHBtcW5pbm5oNTBwczVsOXMiLCJldmVudF9pZCI6IjhlN2UwZjFhLTg2ODktNDI4Mi1hOTBlLTRkZmNkNDVjYWJiNCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNTc4OTI2OTUxLCJleHAiOjE1Nzg5MzA1NTcsImlhdCI6MTU3ODkyNjk1NywiZW1haWwiOiJkb2MxQGNvZGVkYS5jb20ifQ.gMwOzlQgHfu-mqdIcN8WRtsZGadsNBpAqSMXtmeWOAIlfM3G4u-R0TjwhsI3u_Comv5Kq-XfFeVXORHxdlHcKUAOOjXEqWQdNZbLhLbkZv5WY17jo-hHnlzidsoQWCHEhBeManxkDbcNs2H7CPI_eljaNKGbB5ZEWVWeDFcuvkszXOAWFu5X_9ZHfDVpcrlY0K9Z7eRvGHMlKGYoFvxG_toybBoGQr_hSr6gIkgGvUdNfaQpFn4neJbMfT9wtxkmOeLnZ0FxOVy5wpD4h4QMAK62hmVB1zKBscPs8m-pi93KAoE3UwXdqGHH-WIgQp2waNClrPxDzAWQTusqnNe4rA';
+
+  int selectedPatientId;
+  List<Encounter> encounters;
+  Patient selectedPatient;
+  int selectedEncounterId;
+  TokenService._();
+  factory TokenService() {
+    return _instance;
+  }
+
+  static final _instance = TokenService._();
+}
